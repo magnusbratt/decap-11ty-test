@@ -1,3 +1,12 @@
+# Magnus
+
+https://stalwart-brigadeiros-b72e3d.netlify.app/
+https://stalwart-brigadeiros-b72e3d.netlify.app/admin/
+- magnus.bratt@mira.se. Vanliga för Netlify.
+
+https://app.netlify.com/projects/stalwart-brigadeiros-b72e3d/deploys
+
+
 # Neat Starter
 
 Starter Template for **N**etlify CMS, **E**leventy, **A**lpine JS & **T**ailwind CSS
