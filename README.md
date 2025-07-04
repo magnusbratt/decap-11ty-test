@@ -1,5 +1,8 @@
 # Magnus
 
+kör lokalt:
+npm run start
+
 https://stalwart-brigadeiros-b72e3d.netlify.app/
 https://stalwart-brigadeiros-b72e3d.netlify.app/admin/
 - magnus.bratt@mira.se. Vanliga för Netlify.

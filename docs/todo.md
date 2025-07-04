@@ -18,6 +18,7 @@
         - Matomo. Har stöd för UserId
     - [ ] Cookie management
     - [ ] GTM
+- [ ] Brief
 
 # Taggar
 FAQ
@@ -33,18 +34,43 @@ Blog post
 
 # Design home page
 
+- Top row
+    - Logo
+    - search
+    - menu
+    - button book a demo 
+    - button login
+- Row two
+    - left
+        - slogan
+        - book a demo
+        - chat box
+    - right: screen shot
+- Row tree: logos
+- Row four: three columns / masonry: blog, events, pinned posts. USPs?
+- row five: features
+- row six: princing
+
 ## Color schema
 https://www.youtube.com/watch?v=vvPklRN0Tco&list=LL&index=6
 
 ## Inspiration
+https://www.home-assistant.io/
+- ser inte ut exakt som alla andra saas
+- masonry lockar till scroll
+- lyfter fram blog posts och release ntoes. Vi kan ha evenemang
+- 
+
 https://www.hubspot.com/
+https://buildexcellentwebsit.es/
+https://evernote.com/
+https://sanalabs.com/
+
 
 https://www.cursor.com/
-https://sanalabs.com/
 https://www.synthesia.io/
 https://dust.tt/
 https://www.notion.com/
-https://evernote.com/
 https://linear.app/
 
 https://www.upsales.com/
@@ -62,6 +88,10 @@ Nordiskt
 GDPR compliant
 
 AI
+- intercom eller konvolo direkt på startsidan?
 
 Pyramiden
 Best of both worlds
+
+Opinionated
+Video?
