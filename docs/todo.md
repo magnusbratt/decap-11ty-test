@@ -20,6 +20,12 @@
     - [ ] GTM
 - [ ] Brief
 
+# todo senare
+- byt till standard mappstruktur och filnamn. Ev börja om med en ren start med bootstrap
+- sätt upp Decap CMS att redigera vanliga sidor, inte bara blogg
+- använd bootstrap via npm inte cdn? Vad är för- och nackdelar?
+
+
 # Taggar
 FAQ
 HOWTO
