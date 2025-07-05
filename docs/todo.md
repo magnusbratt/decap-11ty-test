@@ -106,3 +106,10 @@ Best of both worlds
 
 Opinionated
 Video?
+
+
+
+# 2025-07-06
+
+# hero > secondary bör vara inverterad. 
+# search expandderar inte längre

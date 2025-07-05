@@ -7,6 +7,7 @@ https://stalwart-brigadeiros-b72e3d.netlify.app/
 https://stalwart-brigadeiros-b72e3d.netlify.app/admin/
 - magnus.bratt@mira.se. Vanliga för Netlify.
 
+Deploys:
 https://app.netlify.com/projects/stalwart-brigadeiros-b72e3d/deploys
 
 
