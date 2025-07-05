@@ -1,11 +1,13 @@
 {
   "scripts": {
-    "start": "npm-run-all --parallel eleventy browsersync",
+    "start": "npm-run-all --parallel watch:css eleventy browsersync",
     "eleventy": "eleventy --watch",
     "debug": "set DEBUG=* & eleventy",
     "build": "npm run build:css && cross-env NODE_ENV=production eleventy",
     "browsersync": "browser-sync start --server _site --files _site --port 8080 --no-notify --no-open",
-    "build:css": "sass src/scss/main.scss:src/static/css/main.css --no-source-map --style=compressed"
+    "build:css": "sass src/scss/main.scss:src/static/css/main.css --no-source-map --style=compressed",
+    "watch:css": "sass --watch src/scss/main.scss:src/static/css/main.css --no-source-map --style=compressed"
+
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",

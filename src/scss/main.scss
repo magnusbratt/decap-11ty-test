@@ -1,5 +1,27 @@
-// Bootstrap (hela)
-@import "../../node_modules/bootstrap/scss/bootstrap";
+// 1. Ladda Bootstrap-funktioner (för t.ex. color functions)
+@use "../../node_modules/bootstrap/scss/functions";
 
-// Egna overrides – skapa ev. _custom.scss och importera här
-// @import "custom";
+// 2. Ladda dina egna variabler (OBS: måste göras innan Bootstrap!)
+@use "./variables" as *;
+@use "./mira";
+
+// 3. Importera Bootstrap-variabler (för att få rätt tokens i nästa steg)
+// @use "../../node_modules/bootstrap/scss/variables";
+// @use "../../node_modules/bootstrap/scss/maps";
+
+// 4. Ladda Bootstrap med dina variabler
+@use "../../node_modules/bootstrap/scss/bootstrap" with (
+  $primary: $primary,
+  $secondary: $secondary,
+  $success: $success,
+  $info: $info,
+  $warning: $warning,
+  $danger: $danger,
+  $light: $light,
+  $dark: $dark,
+  $body-bg: $body-bg,
+  $body-color: $body-color,
+//   $border-radius: $border-radius,
+  $font-family-base: $font-family-base,
+  $font-family-sans-serif: $font-family-sans-serif,
+);

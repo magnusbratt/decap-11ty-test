@@ -1,0 +1,19 @@
+$font-family-sans-serif: 'Titillium Web', sans-serif;
+$font-family-serif: 'PT Serif', serif;
+
+// Primärt typsnitt i Bootstrap (detta används!)
+$font-family-base: $font-family-sans-serif;
+
+// Bootstrap färgvariabler
+$primary: hsl(198, 42%, 51%);
+$secondary: hsl(20, 90%, 55%);
+$success: hsl(145, 60%, 45%);
+$info: hsl(192, 70%, 60%);
+$warning: hsl(43, 90%, 60%);
+$danger: hsl(4, 72%, 48%);;
+$light: hsl(0, 0%, 98%);
+$dark: hsl(210, 20%, 15%);
+
+$body-bg: $light;
+$body-color: $dark;
+$enable-color-modes: true;

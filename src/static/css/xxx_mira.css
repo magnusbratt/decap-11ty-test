@@ -1,22 +1,9 @@
 :root {
   --mirablue: hsl(198, 42%, 51%);
   --mirablue-light: hsl(198, 42%, 85%);
-
-  --bs-primary: hsl(198, 42%, 51%);
-  --bs-secondary: hsl(210, 16%, 72%);
-  --bs-success: hsl(152, 34%, 45%);
-  --bs-info: hsl(192, 100%, 42%);
-  --bs-warning: hsl(41, 95%, 60%);
-  --bs-danger: hsl(0, 70%, 55%);
-  --bs-light: hsl(0, 0%, 98%);
-  --bs-dark: hsl(210, 10%, 20%);
 }
 
-
-
-
 body {
-  font-family: 'Titillium Web', sans-serif;
 }
 
 .icon {
