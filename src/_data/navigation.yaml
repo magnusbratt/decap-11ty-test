@@ -1,10 +1,14 @@
 ---
 items:
-  - text: Menu One
+  - text: Features
     url: "#"
-  - text: Menu Two
+  - text: Subscription
     url: "#"
-  - text: Menu Three
+  - text: Pricing
+    url: "#"
+  - text: Professional Services
+    url: "#"
+  - text: Resources
     url: "#"
   - text: Blog
     url: "/blog"
