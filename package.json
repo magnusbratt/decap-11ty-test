@@ -3,8 +3,9 @@
     "start": "npm-run-all --parallel eleventy browsersync",
     "eleventy": "eleventy --watch",
     "debug": "set DEBUG=* & eleventy",
-    "build": "cross-env NODE_ENV=production eleventy",
-    "browsersync": "browser-sync start --server _site --files _site --port 8080 --no-notify --no-open"
+    "build": "npm run build:css && cross-env NODE_ENV=production eleventy",
+    "browsersync": "browser-sync start --server _site --files _site --port 8080 --no-notify --no-open",
+    "build:css": "sass src/scss/main.scss:src/static/css/main.css --no-source-map --style=compressed"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
@@ -15,8 +16,10 @@
     "html-minifier": "^4.0.0",
     "js-yaml": "^4.1.0",
     "luxon": "^2.3.0",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.89.2"
   },
   "dependencies": {
+    "bootstrap": "^5.3.7"
   }
 }
