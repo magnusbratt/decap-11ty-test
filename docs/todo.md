@@ -19,6 +19,11 @@
     - [ ] Cookie management
     - [ ] GTM
 - [ ] Brief
+- [ ] färgschema. Fråga ChatGPT och ta in i bootstrap
+- [ ] Disposition iPad Portrait och ladndscape
+- [ ] testa utan gradient
+- [ ] ta bort skugga på cards
+- [ ] 
 
 # todo senare
 - byt till standard mappstruktur och filnamn. Ev börja om med en ren start med bootstrap
