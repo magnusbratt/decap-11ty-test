@@ -13,4 +13,4 @@ I den här artikeln går vi igenom hur du som fundraiser hittar och tolkar infor
 
 För att arbeta med många gåvor samtidigt – till exempel vid kampanjuppföljning – finns även vyerna under *Fundraising > Gåvor, se* [List of gifts with metrics and filters](https://www.mira.se/2023/06/20/gift-list-metrics/). I den här artikeln fokuserar vi på informationen om enskilda givare.
 
-![]()
+![](/static/img/img_0419.png)
