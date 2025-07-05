@@ -126,6 +126,13 @@ a.nav-link:hover {
   }
 }
 
+/* Dropdown styles */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
 /*****/
 
 div#hero h1,

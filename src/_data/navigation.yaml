@@ -2,13 +2,38 @@
 items:
   - text: Features
     url: "#"
+    children:
+      - text: CRM
+        url: "/features#crm"
+      - text: Email communications
+        url: "/features#email-communications"
+      - text: Event management
+        url: "/features#event-management"
+      - text: Integrations
+        url: "/features#integrations"
   - text: Subscription
     url: "#"
   - text: Pricing
     url: "#"
   - text: Professional Services
     url: "#"
+    children:
+      - text: Onboarding
+        url: "/professional-services/onboarding"
+      - text: Data Migration
+        url: "/professional-services/data-migration"
+      - text: Custom Development
+        url: "/professional-services/custom-development"
+      - text: Training
+        url: "/professional-services/training"
   - text: Resources
     url: "#"
-  - text: Blog
-    url: "/blog"
+    children:
+      - text: Blog
+        url: "/blog"
+      - text: Knowledge Base
+        url: "/kb"
+      - text: Support
+        url: "/support"
+      - text: LinkedIn
+        url: "https://www.linkedin.com/company/mira-network/"
