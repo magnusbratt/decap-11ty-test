@@ -138,3 +138,24 @@ a {
     color: hsl(198, 42%, 40%);
   }
 }
+
+
+// Posts
+
+article.prose img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 2em auto; /* valfritt */
+  border: #ccc 1px solid;
+}
+
+article.prose p {
+  font-family: pt-serif, serif;
+  font-size: larger;
+}
+
+article.prose h1, h2, h3, h4, h5, h6, ul, li, ol {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal !important;
+}

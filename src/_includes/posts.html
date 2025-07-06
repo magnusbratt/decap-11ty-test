@@ -2,20 +2,84 @@
 layout: default
 prism: true
 ---
+<!-- Rad 1: Navbar med logo, navigation, sök och knappar -->
+<div class="bg-white sticky-top">
+    <div class="container ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container-fluid bg-white">
+                <a class="navbar-brand" href="/"><img src="/static/img/mira-logo.svg" alt="Mira Network logotype" height="20"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<div class="container max-w-4xl mt-6  px-6">
-    <div class="pb-5 mb-5 border-b border-gray-100">
+                <div class="collapse navbar-collapse bg-white" id="mainNav">
+                    {% if navigation.items %}
+
+                        <div class="mx-auto">
+
+                            <ul class="navbar-nav d-flex justify-content-center">
+                                {% for item in navigation.items %}
+                                    {% if item.children %}
+                                        <li class="nav-item dropdown">
+                                            <a 
+          class="nav-link dropdown-toggle" 
+          href="{{ item.url }}" 
+          id="navDropdown{{ loop.index }}" 
+          role="button" 
+          data-bs-toggle="dropdown" 
+          aria-expanded="false"
+        >
+                                                {{ item.text }}
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navDropdown{{ loop.index }}">
+                                                {% for child in item.children %}
+                                                    <li>
+                                                        <a class="dropdown-item" href="{{ child.url }}">{{ child.text }}</a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </li>
+                                    {% else %}
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ item.url }}">{{ item.text }}</a>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+
+                    <!-- Search and demo button -->
+                    <div class="d-flex flex-column flex-lg-row align-items-stretch gap-2 mt-3 mt-lg-0">
+                        <form class="w-100 search-wrapper">
+                            <div class="input-group w-100">
+                                <span class="input-group-text border-end-0">
+                                    <i class="fas fa-search text-muted"></i>
+                                </span>
+                                <input class="form-control border-start-0 search-input" type="search" placeholder="Search"/>
+                            </div>
+                        </form>
+                        <a class="btn btn-secondary w-100 w-lg-auto mb-3 mb-lg-0" href="#">Book a demo</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="container max-w-4xl px-6">
+    <div class="pb-5 border-b border-gray-100 pt-5 text-center">
         <h1 class="font-bold text-5xl">{{title}}</h1>
         <p class="text-center text-base leading-6 font-medium text-gray-500">
-            <time> {{ date | readableDate }}
+            <time>
+                {{ date | readableDate }}
                 by
                 <a>{{ author }}</a>
-
             </time>
         </p>
-
     </div>
     <article class="prose lg:prose-xl my-4 mx-auto">
-        {{ content | safe }}</article>
-
+        {{ content | safe }}
+    </article>
 </div>
