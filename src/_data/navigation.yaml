@@ -14,7 +14,7 @@ items:
   - text: Subscription
     url: "#"
   - text: Pricing
-    url: "#"
+    url: "/#pricing"
   - text: Professional Services
     url: "#"
     children:
