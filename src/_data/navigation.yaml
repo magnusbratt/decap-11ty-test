@@ -11,10 +11,10 @@ items:
         url: "/features#event-management"
       - text: Integrations
         url: "/features#integrations"
-  - text: Subscription
-    url: "#"
   - text: Pricing
     url: "/#pricing"
+  - text: Subscription
+    url: "#"
   - text: Professional Services
     url: "#"
     children:
