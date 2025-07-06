@@ -25,3 +25,26 @@
   $font-family-base: $font-family-base,
   $font-family-sans-serif: $font-family-sans-serif,
 );
+
+$edu-bg: #e6f4f1;       // Mild blågrön för Higher Education
+$membership-bg: #f4ede6; // Varm beige för medlemsorganisationer
+
+.custom-card.higher-education {
+  background-color: var(--bs-info-bg-subtle);
+}
+.custom-card.membership-organizations {
+  background-color: var(--bs-warning-bg-subtle);
+}
+
+.btn-primary {
+  color: white !important; // säkerställ att det inte skrivs över
+}
+
+.btn-secondary {
+  color: white !important; // säkerställ att det inte skrivs över
+}
+
+.btn:hover {
+  box-shadow: 4px 4px 0px rgb(0 0 0 / 79%);
+  transform: translateY(-2px);
+}

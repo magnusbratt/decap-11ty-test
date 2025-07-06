@@ -31,8 +31,12 @@ items:
     children:
       - text: Blog
         url: "/blog"
+      - text: Events, Webinars and open training
+        url: "/events"
       - text: Knowledge Base
         url: "/kb"
+      - text: Open Training
+        url: "/training"
       - text: Support
         url: "/support"
       - text: LinkedIn

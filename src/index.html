@@ -5,23 +5,25 @@ path: home
 ---
 
 <!-- Rad 1: Navbar med logo, navigation, sök och knappar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
-  <div class="container-fluid bg-white">
-    <a class="navbar-brand" href="#"><img src="/static/img/mira-logo.svg" alt="Mira Network logotype" height="20"/></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<div class="bg-white sticky-top">
+<div class="container ">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container-fluid bg-white">
+      <a class="navbar-brand" href="#"><img src="/static/img/mira-logo.svg" alt="Mira Network logotype" height="20"/></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse bg-white" id="mainNav">
-      {% if navigation.items %}
+      <div class="collapse navbar-collapse bg-white" id="mainNav">
+        {% if navigation.items %}
 
-        <div class="mx-auto">
+          <div class="mx-auto">
 
-          <ul class="navbar-nav d-flex justify-content-center">
-            {% for item in navigation.items %}
-              {% if item.children %}
-                <li class="nav-item dropdown">
-                  <a 
+            <ul class="navbar-nav d-flex justify-content-center">
+              {% for item in navigation.items %}
+                {% if item.children %}
+                  <li class="nav-item dropdown">
+                    <a 
           class="nav-link dropdown-toggle" 
           href="{{ item.url }}" 
           id="navDropdown{{ loop.index }}" 
@@ -29,42 +31,44 @@ path: home
           data-bs-toggle="dropdown" 
           aria-expanded="false"
         >
-                    {{ item.text }}
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navDropdown{{ loop.index }}">
-                    {% for child in item.children %}
-                      <li>
-                        <a class="dropdown-item" href="{{ child.url }}">{{ child.text }}</a>
-                      </li>
-                    {% endfor %}
-                  </ul>
-                </li>
-              {% else %}
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ item.url }}">{{ item.text }}</a>
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        {% endif %}
-      </div>
+                      {{ item.text }}
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navDropdown{{ loop.index }}">
+                      {% for child in item.children %}
+                        <li>
+                          <a class="dropdown-item" href="{{ child.url }}">{{ child.text }}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% else %}
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ item.url }}">{{ item.text }}</a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
 
-      <!-- Search and demo button -->
-      <div class="d-flex flex-column flex-lg-row align-items-stretch gap-2 mt-3 mt-lg-0">
-        <form class="w-100 search-wrapper">
-          <div class="input-group w-100">
-            <span class="input-group-text border-end-0">
-              <i class="fas fa-search text-muted"></i>
-            </span>
-            <input class="form-control border-start-0 search-input" type="search" placeholder="Search"/>
-          </div>
-        </form>
-        <a class="btn btn-primary w-100 w-lg-auto mb-3 mb-lg-0" href="#">Book a demo</a>
-      </div>
+        <!-- Search and demo button -->
+        <div class="d-flex flex-column flex-lg-row align-items-stretch gap-2 mt-3 mt-lg-0">
+          <form class="w-100 search-wrapper">
+            <div class="input-group w-100">
+              <span class="input-group-text border-end-0">
+                <i class="fas fa-search text-muted"></i>
+              </span>
+              <input class="form-control border-start-0 search-input" type="search" placeholder="Search"/>
+            </div>
+          </form>
+          <a class="btn btn-secondary w-100 w-lg-auto mb-3 mb-lg-0" href="#">Book a demo</a>
+        </div>
 
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>
+</div>
 
 <!-- Rad 2: Hero-sektion med rubrik, text, knappar och carousel -->
 <section class="py-5 text-white" style="background: linear-gradient(to bottom right, var(--mirablue-light), var(--mirablue));">
@@ -74,8 +78,8 @@ path: home
         <h1 class="display-5 hero-title">Business-critical CRM <br/>for organizations that <br/>serve the public good</h1>
         <p class="lead mt-3">Mira CRM is a ready-to-use SaaS platform &mdash; purpose-built for external relations, collaboration, and member engagement.</p>
         <div class="mt-4 d-flex gap-3 justify-content-center justify-content-lg-start">
-          <a href="#" class="btn btn-light ">BOOK A DEMO</a>
-          <a href="#" class="btn btn-outline-light ">SEE FEATURES</a>
+          <a href="#" class="btn btn-secondary ">Book a demo</a>
+          <a href="#" class="btn btn-outline-light ">See features</a>
         </div>
       </div>
       <div class="col-lg-6">
@@ -116,12 +120,19 @@ path: home
 <section class="py-1 text-center">
   <div class="container">
     <div class="row justify-content-center align-items-center g-4">
-      <div class="col-4 col-md-2"><img src="/static/img/startpage-logos/su-grey.svg" class="img-fluid grayscale" alt="Logo"/></div>
-      <div class="col-4 col-md-2"><img src="/static/img/startpage-logos/lu-grey.png" class="img-fluid grayscale" style="transform: scale(0.65); transform-origin: center;" alt="Logo"/></div>
-      <div class="col-4 col-md-2"><img src="/static/img/startpage-logos/uu-grey.svg" class="img-fluid grayscale" style="transform: scale(0.80); transform-origin: center;" alt="Logo"/></div>
-      <div class="col-4 col-md-2"><img src="/static/img/startpage-logos/ki-grey.svg" class="img-fluid grayscale" style="transform: scale(0.80); transform-origin: center;" alt="Logo"/></div>
-      <div class="col-4 col-md-2"><img src="/static/img/startpage-logos/cth-grey.svg" class="img-fluid grayscale" style="transform: scale(0.60); transform-origin: center;" alt="Logo"/></div>
-      <div class="col-4 col-md-2"><img src="/static/img/startpage-logos/arcada-grey.svg" class="img-fluid grayscale" style="transform: scale(1.00); transform-origin: center;" alt="Logo"/></div>
+      <div class="col-2 col-md-1"><img src="/static/img/startpage-logos/su-grey.svg" class="img-fluid grayscale" alt="Logo"/></div>
+      <div class="col-2 col-md-1"><img src="/static/img/startpage-logos/lu-grey.png" class="img-fluid grayscale" style="transform: scale(0.65); transform-origin: center;" alt="Logo"/></div>
+      <div class="col-2 col-md-1"><img src="/static/img/startpage-logos/uu-grey.svg" class="img-fluid grayscale" style="transform: scale(0.80); transform-origin: center;" alt="Logo"/></div>
+      <div class="col-2 col-md-1"><img src="/static/img/startpage-logos/ki-grey.svg" class="img-fluid grayscale" style="transform: scale(0.80); transform-origin: center;" alt="Logo"/></div>
+      <div class="col-2 col-md-1"><img src="/static/img/startpage-logos/cth-grey.svg" class="img-fluid grayscale" style="transform: scale(0.60); transform-origin: center;" alt="Logo"/></div>
+      <div class="col-2 col-md-1"><img src="/static/img/startpage-logos/arcada-grey.svg" class="img-fluid grayscale" style="transform: scale(1.00); transform-origin: center;" alt="Logo"/></div>
+
+      <div class="col-2 col-md-1"><img src="/static/img/startpage-logos/su-grey.svg" class="img-fluid grayscale" alt="Logo"/></div>
+      <div class="col-2 col-md-1"><img src="/static/img/startpage-logos/lu-grey.png" class="img-fluid grayscale" style="transform: scale(0.65); transform-origin: center;" alt="Logo"/></div>
+      <div class="col-2 col-md-1"><img src="/static/img/startpage-logos/uu-grey.svg" class="img-fluid grayscale" style="transform: scale(0.80); transform-origin: center;" alt="Logo"/></div>
+      <div class="col-2 col-md-1"><img src="/static/img/startpage-logos/ki-grey.svg" class="img-fluid grayscale" style="transform: scale(0.80); transform-origin: center;" alt="Logo"/></div>
+      <div class="col-2 col-md-1"><img src="/static/img/startpage-logos/cth-grey.svg" class="img-fluid grayscale" style="transform: scale(0.60); transform-origin: center;" alt="Logo"/></div>
+      <div class="col-2 col-md-1"><img src="/static/img/startpage-logos/arcada-grey.svg" class="img-fluid grayscale" style="transform: scale(1.00); transform-origin: center;" alt="Logo"/></div>
       <!--
       <div class="col-4 col-md-2"><img src="/static/img/startpage-logos/hanken-grey.svg" class="img-fluid grayscale" style="transform: scale(0.60); transform-origin: center;" alt="Kund 3" /></div>
       -->
@@ -188,7 +199,8 @@ path: home
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card h-100 shadow-sm ">
+        <div class="card h-100 shadow-sm custom-card higher-education">
+          <img src="static/img/highereducation.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">For Higher Education</h5>
             <p class="card-text">Hantera externa relationer, partnerskap och evenemang i en gemensam plattform.</p>
@@ -197,7 +209,8 @@ path: home
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
+        <img src="static/img/membershiporganizations.png" class="card-img-top" alt="...">
+        <div class="card h-100 shadow-sm custom-card membership-organizations">
           <div class="card-body">
             <h5 class="card-title">For Membership Orgs</h5>
             <p class="card-text">Bygg engagemang, förstå dina medlemmar och skapa värde över tid.</p>

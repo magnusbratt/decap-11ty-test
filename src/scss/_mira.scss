@@ -1,7 +1,10 @@
 @use './variables' as *;
 
 // Variabler (kan även flyttas till _variables.scss om du vill återanvända dem där)
-$mirablue: hsl(198, 42%, 51%);
+// $mirablue: hsl(198, 42%, 51%);
+// $mirablue-light: hsl(198, 42%, 85%);
+
+$mirablue: hsl(190, 17%, 49%);
 $mirablue-light: hsl(198, 42%, 85%);
 
 // CSS-variabler för runtime-användning (om du vill ha båda)
