@@ -115,7 +115,7 @@ Video?
 # search expandderar inte längre
 # balans hero olika storlekar. 
 
-# bli av med sass-varningar
+# bli av med sass-varningar ==> Verkar fungera nu?
 Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -139,3 +139,20 @@ More info and automated migrator: https://sass-lang.com/d/import
     src\scss\main.scss 13:1                         root stylesheet
 
 Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+# 2025-07-07
+
+## Lägga in features på startsidan
+https://getbootstrap.com/docs/5.3/examples/features/
+
+## Få search att expandera. Eller ska den visa ett sökverktyg där kan kan söka i blog, KB, getting started, etc.
+
+## Definiera taggar
+https://chatgpt.com/c/686bb3e5-4f94-8003-ad53-c7c3f1d444a9
+
+## Migreringsscript för posts
+https://chatgpt.com/g/g-p-67d5d4415e8c819185c56f22da3457f6-ny-hemsida-mira/c/686b9944-5b58-8003-90ea-354f04d0759c
+
+## Migreringsscript för KB-artiklar
+
+## Färgschema
